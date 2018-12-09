@@ -1,0 +1,31 @@
+{
+  "name": "compute",
+  "version": "0.0.1",
+  "description": "Use the performance capabilities of `web worker` in the browser to avoid blocking the main thread",
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TenkaiRuri/compute.git"
+  },
+  "keywords": [
+    "web-worker",
+    "worker",
+    "compute",
+    "typescript"
+  ],
+  "author": "Tenkai Ruri <babichan@outlook.com> (https://att.moe)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TenkaiRuri/compute/issues"
+  },
+  "homepage": "https://github.com/TenkaiRuri/compute#readme",
+  "devDependencies": {
+    "tslint": "^5.11.0",
+    "typescript": "^3.2.2"
+  }
+}
