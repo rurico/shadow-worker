@@ -5,17 +5,17 @@
 Use the performance capabilities of `web worker` in the browser to avoid blocking the main thread
 
 <div style="text-align:center">
-<figure>
+<!-- <figure> -->
   <img src="res/DA9E8612C96139720D80BFBB1A5DD184.jpg" height="500">
-  <figcaption>use compute() api</figcaption>
-</figure>
+  <span>use compute() api</span>
+<!-- </figure> -->
 </div>
 
 <div style="text-align:center">
-<figure>
+<!-- <figure> -->
   <img src="res/CABA5DEE15143DE172EC75B328C46AD2.jpg" height="500">
-  <figcaption>not use</figcaption>
-</figure>
+  <span>not use</span>
+<!-- </figure> -->
 </div>
 
 ## API:
