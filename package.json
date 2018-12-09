@@ -1,5 +1,5 @@
 {
-  "name": "compute",
+  "name": "shadow-worker",
   "version": "0.0.1",
   "description": "Use the performance capabilities of `web worker` in the browser to avoid blocking the main thread",
   "main": "./dist/main.js",
@@ -27,5 +27,11 @@
   "devDependencies": {
     "tslint": "^5.11.0",
     "typescript": "^3.2.2"
-  }
+  },
+  "files": [
+    "package.json",
+    "LICENSE",
+    "README.md",
+    "dist"
+  ]
 }

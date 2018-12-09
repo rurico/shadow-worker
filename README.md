@@ -1,8 +1,49 @@
-# compute in web worker
+# shadow-worker
 
+[![NPM version](https://img.shields.io/badge/npm-0.0.1-brightgreen.svg)](https://www.npmjs.com/package/shadow-worker)
 [![License](https://img.shields.io/github/license/TenkaiRuri/compute.svg)](https://github.com/TenkaiRuri/compute)
 
 Use the performance capabilities of `web worker` in the browser to avoid blocking the main thread
+
+### Usage:
+
+```js
+npm i shadow-worker #or
+npm install shadow-worker --save
+```
+
+### Example:
+
+#### async/await
+
+```js
+import { compute } from 'shadow-worker';
+
+await compute(() => [1, 2, 3, 4].map(x => x * 2));
+// [2,4,6,8]
+
+const fn = arr => arr.map(x => x * 2);
+
+await compute(fn, [1, 2, 3, 4]);
+// [2,4,6,8]
+
+// # debug options
+await compute(fn, [1, 2, 3, 4], { label: 'fn', printScript: true });
+// data:text/javascript;charset=UTF-8,onmessage=(()=>({data})=>postMessage((arr => {arr.map(x=>x*2)})(data)))(postMessage);
+// fn: 16.487060546875ms
+// [2, 4, 6, 8]
+```
+
+#### Promise then
+
+```js
+import { compute } from 'shadow-worker';
+
+compute(() => [1, 2, 3, 4].map(x => x * 2)).then(console.log);
+// [2, 4, 6, 8]
+```
+
+### Browser test
 
 <div style="text-align:center">
 <!-- <figure> -->
@@ -22,7 +63,7 @@ Use the performance capabilities of `web worker` in the browser to avoid blockin
 
 ### compute()
 
-```js
+```ts
 /**
  * You can easily use `web worker`.
  * Using `web worker` is as easy as using a function, as natural as breathing.
@@ -41,4 +82,4 @@ Note: Just in browser **_node.js_** side can't use
 
 ## TODO
 
-- [ ] add use case
+- [ ] add test case
