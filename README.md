@@ -4,15 +4,19 @@
 
 Use the performance capabilities of `web worker` in the browser to avoid blocking the main thread
 
-<figure style="text-align:center">
-  <img src="res/DA9E8612C96139720D80BFBB1A5DD184.jpg" height="300">
+<div style="text-align:center">
+<figure>
+  <img src="res/DA9E8612C96139720D80BFBB1A5DD184.jpg" height="500">
   <figcaption>use compute() api</figcaption>
 </figure>
+</div>
 
-<figure style="text-align:center">
-  <img src="res/CABA5DEE15143DE172EC75B328C46AD2.jpg" height="300">
+<div style="text-align:center">
+<figure>
+  <img src="res/CABA5DEE15143DE172EC75B328C46AD2.jpg" height="500">
   <figcaption>not use</figcaption>
 </figure>
+</div>
 
 ## API:
 
@@ -37,4 +41,4 @@ Note: Just in browser **_node.js_** side can't use
 
 ## TODO
 
-[ ] add use case
+- [ ] add use case
