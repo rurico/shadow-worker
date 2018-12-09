@@ -4,16 +4,21 @@
 
 Use the performance capabilities of `web worker` in the browser to avoid blocking the main thread
 
-![](res/DA9E8612C96139720D80BFBB1A5DD184.jpg)
-use compute() api
-![](res/CABA5DEE15143DE172EC75B328C46AD2.jpg)
-not use
+<figure style="text-align:center">
+  <img src="res/DA9E8612C96139720D80BFBB1A5DD184.jpg" height="300">
+  <figcaption>use compute() api</figcaption>
+</figure>
+
+<figure style="text-align:center">
+  <img src="res/CABA5DEE15143DE172EC75B328C46AD2.jpg" height="300">
+  <figcaption>not use</figcaption>
+</figure>
 
 ## API:
 
 ### compute()
 
-```
+```js
 /**
  * You can easily use `web worker`.
  * Using `web worker` is as easy as using a function, as natural as breathing.
